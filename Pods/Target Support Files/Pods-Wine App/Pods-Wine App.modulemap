@@ -1,0 +1,6 @@
+framework module Pods_Wine_App {
+  umbrella header "Pods-Wine App-umbrella.h"
+
+  export *
+  module * { export * }
+}
