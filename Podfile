@@ -6,6 +6,6 @@ target 'Wine App' do
   use_frameworks!
 
   # Pods for Wine App
-  "SwiftCSV"
+  pod 'Firebase/Core'
 
 end

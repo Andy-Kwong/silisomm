@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0CAB9D9D1F4E7212A1127047 /* Pods_Wine_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FB349AF0D94AC42EB9080F /* Pods_Wine_App.framework */; };
+		C018F3AF20263DD0004C70D1 /* plistWineTestData.plist in Resources */ = {isa = PBXBuildFile; fileRef = C018F3AE20263DD0004C70D1 /* plistWineTestData.plist */; };
+		C018F3B120264168004C70D1 /* iOSWineTestData.json in Resources */ = {isa = PBXBuildFile; fileRef = C018F3B020264168004C70D1 /* iOSWineTestData.json */; };
+		C08CC5AC202634CB00CC6192 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C08CC5AB202634CB00CC6192 /* GoogleService-Info.plist */; };
 		C09635432024289E00CE15EC /* DiscoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09635422024289E00CE15EC /* DiscoverVC.swift */; };
 		C0963545202428B300CE15EC /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0963544202428B300CE15EC /* ProfileVC.swift */; };
 		C0963547202428CD00CE15EC /* WineInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0963546202428CD00CE15EC /* WineInfoVC.swift */; };
@@ -24,6 +27,9 @@
 		8066998CD73604D80CDC574A /* Pods-Wine App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wine App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wine App/Pods-Wine App.release.xcconfig"; sourceTree = "<group>"; };
 		A5CAEF15F3BD8B9B3D94FF72 /* Pods-Wine App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wine App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wine App/Pods-Wine App.debug.xcconfig"; sourceTree = "<group>"; };
 		A9FB349AF0D94AC42EB9080F /* Pods_Wine_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wine_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C018F3AE20263DD0004C70D1 /* plistWineTestData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = plistWineTestData.plist; sourceTree = "<group>"; };
+		C018F3B020264168004C70D1 /* iOSWineTestData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = iOSWineTestData.json; sourceTree = "<group>"; };
+		C08CC5AB202634CB00CC6192 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C09635422024289E00CE15EC /* DiscoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverVC.swift; sourceTree = "<group>"; };
 		C0963544202428B300CE15EC /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		C0963546202428CD00CE15EC /* WineInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineInfoVC.swift; sourceTree = "<group>"; };
@@ -67,9 +73,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C018F3B220264172004C70D1 /* WineData */ = {
+			isa = PBXGroup;
+			children = (
+				C018F3AE20263DD0004C70D1 /* plistWineTestData.plist */,
+				C018F3B020264168004C70D1 /* iOSWineTestData.json */,
+			);
+			path = WineData;
+			sourceTree = "<group>";
+		};
 		C0FE185E201FB6460008AF47 = {
 			isa = PBXGroup;
 			children = (
+				C018F3B220264172004C70D1 /* WineData */,
 				C0FE1869201FB6470008AF47 /* Wine App */,
 				C0FE1868201FB6470008AF47 /* Products */,
 				BE961F228A7630D4A80CD7CD /* Pods */,
@@ -97,6 +113,7 @@
 				C09635422024289E00CE15EC /* DiscoverVC.swift */,
 				C0FE1874201FB6470008AF47 /* Assets.xcassets */,
 				C0FE1876201FB6470008AF47 /* LaunchScreen.storyboard */,
+				C08CC5AB202634CB00CC6192 /* GoogleService-Info.plist */,
 				C0FE1879201FB6470008AF47 /* Info.plist */,
 				C0FE1871201FB6470008AF47 /* Wine_App.xcdatamodeld */,
 			);
@@ -165,8 +182,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C018F3B120264168004C70D1 /* iOSWineTestData.json in Resources */,
 				C0FE1878201FB6470008AF47 /* LaunchScreen.storyboard in Resources */,
 				C0FE1875201FB6470008AF47 /* Assets.xcassets in Resources */,
+				C08CC5AC202634CB00CC6192 /* GoogleService-Info.plist in Resources */,
+				C018F3AF20263DD0004C70D1 /* plistWineTestData.plist in Resources */,
 				C0FE1870201FB6470008AF47 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,9 +233,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Wine App/Pods-Wine App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -377,7 +402,7 @@
 				DEVELOPMENT_TEAM = GZGUE69R79;
 				INFOPLIST_FILE = "Wine App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ly.trailwise.Wine-App";
+				PRODUCT_BUNDLE_IDENTIFIER = ly.trailwise.silisomm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -393,7 +418,7 @@
 				DEVELOPMENT_TEAM = GZGUE69R79;
 				INFOPLIST_FILE = "Wine App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ly.trailwise.Wine-App";
+				PRODUCT_BUNDLE_IDENTIFIER = ly.trailwise.silisomm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

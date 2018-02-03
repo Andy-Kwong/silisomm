@@ -14,7 +14,11 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+<<<<<<< HEAD
+               BlueprintIdentifier = "8C8F807678B223A50C7E285A0A0BFB3A"
+=======
                BlueprintIdentifier = "40B4514CA63E3EDFF5EF410941AA39D5"
+>>>>>>> master
                BuildableName = "Pods_Wine_App.framework"
                BlueprintName = "Pods-Wine App"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +51,11 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
+<<<<<<< HEAD
+            BlueprintIdentifier = "8C8F807678B223A50C7E285A0A0BFB3A"
+=======
             BlueprintIdentifier = "40B4514CA63E3EDFF5EF410941AA39D5"
+>>>>>>> master
             BuildableName = "Pods_Wine_App.framework"
             BlueprintName = "Pods-Wine App"
             ReferencedContainer = "container:Pods.xcodeproj">
