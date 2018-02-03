@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import Foundation
 
 class DiscoverVC: UIViewController {
     
+    let decoder = JSONDecoder()
+    let wineData = Bundle.main.path(forResource: WineData, ofType: "json")
     var wines = ["Rainstorm 2013 Pinot Gris (Willamette Valley)", "Silverado 2006 Cabernet Sauvignon (Napa Valley)", "Vina Bisquertt 2007 Casa La Joya Reserve Merlot (Colchagua Valley)"]
     var varietal = ["PINOT GRIS", "CABERNET SAUVIGNON", "MERLOT"]
     var descriptionLabel = ["Tart and snappy, the flavors of lime flesh and rind dominate. Some green pineapple pokes through, with crisp acidity underscoring the flavors. The wine was all stainless-steel fermented.", "This sophisticated wine is mostly Cabernet Sauvignon, which accounts for the firm tannins and dense structure as well as most of the blackberries and blackcurrants. Smaller amounts of Merlot and Cabernet Franc add cherries and violets, while oak contributes smoky complexities. Rich and elegant, the wine provides lovely drinking now.", "Bisquertt usually does well with its value-priced Merlots, and seeing that 2007 was an excellent vintage in Chile, this wine excels in the value price range. The nose is dark and saturated, but pure and inviting. And the palate is ripe and smooth, with spice, plum, blackberry and herb notes, particularly anise. Finishes clean, smooth and peppery. Drink now."]
